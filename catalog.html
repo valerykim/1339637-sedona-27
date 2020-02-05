@@ -27,6 +27,103 @@
           </ul>
         </nav>
       </header>
+
+      <main class="container">
+        <form class="header__filtation filtration" method="post" action="https://echo.htmlacademy.ru" oninput="daysoutput.value=dayscount.value">
+          <div class="filtration__components components">
+            <fieldset class="components__structure">
+              <p class="components__title elem">Инфаструктура:</p>
+              <ul class="components__list filter-option">
+                <li class="components__item">
+                  <label class="component__label-checkbox check">
+                    <input class="components__checkbox components__checkbox--disabled" type="checkbox" name="component" checked>
+                    <span class="component__text">Бассейн</span>
+                  </label>
+                </li>
+                <li class="components__item">
+                  <label class="component__label-checkbox check">
+                    <input class="components__checkbox components__checkbox--disabled" type="checkbox" name="component">
+                    <span class="component__text">Парковка</span>
+                  </label>
+                </li>
+                <li class="components__item">
+                  <label class="component__label-checkbox check">
+                    <input class="components__checkbox components__checkbox--disabled" type="checkbox" name="component">
+                    <span class="component__text">Wi-Fi</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filtration__house house">
+            <fieldset class="house__structure">
+              <p class="house__title elem">Тип жилья:</p>
+              <ul class="house__list filter-option">
+                <li class="house__item">
+                  <label class="house__label-checkbox check">
+                    <input class="house__checkbox house__checkbox--disabled" type="checkbox" name="places" checked>
+                    <span class="component__text">Гостиница</span>
+                  </label>
+                </li>
+                <li class="house__item">
+                  <label class="house__label-checkbox check">
+                    <input class="house__checkbox house__checkbox--disabled" type="checkbox" name="places" checked>
+                    <span class="component__text">Мотель</span>
+                  </label>
+                </li>
+                <li class="house__item">
+                  <label class="house__label-checkbox check">
+                    <input class="house__checkbox house__checkbox--disabled" type="checkbox" name="places" checked>
+                    <span class="component__text">Апартаменты</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filter-range">
+               <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <a class="btn-transparent" href="#">Показать</a>
+            </div>
+        </form>
+        <div class="container__nav nav">
+          <p class="nav__title elem">Найдено: 
+            <span class="nav__text elem">3</span>
+          </p>
+           <div class="nav__sort sort">
+             <p class="sort__title">Сортировка:</p>
+             <ul class="sort__list">
+               <li class="sort__item sort__item--current">
+                 <button class="sort__btn sort__btn--active">По цене</button>
+               </li>
+               <li class="sort__item sort__item--pending">
+                 <button class="sort__btn">По типу</button>
+               </li>
+               <li class="sort__item sort__item--pending">
+                 <button class="sort__btn">По рейтингу</button>
+               </li>
+             </ul>
+           </div>
+           <div class="nav__page page">
+             <button class="page__up" title="Сортировка от меньшего к большему">
+               <svg  class="page__img--current" xmlns="" width="11" height="10" viewBox="0 0 11 10"><path  d="M5.5 0L0 10h11z"/></svg>
+             </button>
+             <button class="page__down page--active" title="Сортировка от большего к меньшему">
+               <svg class="page__img--pending" xmlns="" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+             </button>
+           </div>
+        </div>
+
           <ul class="hotels__list">
             <li class="hotels__item">
               <div class="hotels__item-photo">
