@@ -28,7 +28,7 @@
         </nav>
       </header>
 
-      <main class="container">
+      <div class="container">
         <form class="header__filtation filtration" method="post" action="https://echo.htmlacademy.ru" oninput="daysoutput.value=dayscount.value">
           <div class="filtration__components components">
             <fieldset class="components__structure">
@@ -97,23 +97,28 @@
             </div>
         </form>
         <div class="container__nav nav">
-          <p class="nav__title elem">Найдено: 
+          <p class="nav__title elem">Найдено: </p>
             <span class="nav__text elem">3</span>
+        </div>
           </p>
            <div class="nav__sort sort">
              <p class="sort__title">Сортировка:</p>
              <ul class="sort__list">
                <li class="sort__item sort__item--current">
                  <button class="sort__btn sort__btn--active">По цене</button>
+             </ul>
                </li>
+              </div>
                <li class="sort__item sort__item--pending">
                  <button class="sort__btn">По типу</button>
                </li>
+               <div class="sorting-ab">
+                <ul class="sorting-ab-list">
                <li class="sort__item sort__item--pending">
                  <button class="sort__btn">По рейтингу</button>
+               </ul>
                </li>
-             </ul>
-           </div>
+              </div>
            <div class="nav__page page">
              <button class="page__up" title="Сортировка от меньшего к большему">
                <svg  class="page__img--current" xmlns="" width="11" height="10" viewBox="0 0 11 10"><path  d="M5.5 0L0 10h11z"/></svg>
@@ -122,12 +127,13 @@
                <svg class="page__img--pending" xmlns="" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
              </button>
            </div>
-        </div>
-
+        <section class="results-block">
           <ul class="hotels__list">
             <li class="hotels__item">
-              <div class="hotels__item-photo">
+              <ul class="hotels__item-photo">
                 <img src="" alt="Amara Resort and Spa">
+            </ul>
+            </li>
               </div>
               <div class="hotels__item-desc">
                 <a  class="hotels__item-name" href="#">Amara Resort &amp; Spa</a>
@@ -139,7 +145,6 @@
                   <a class="hotels__more-info  btn" href="#">Подробнее</a>
                   <a class="hotels__item-book  btn  btn--action" href="#">Забронировать</a>
                 </div>
-              </div>
               <div class="hotels__item-rating">
                 <span class="hotels__item-stars" aria-label="4*">
                   <span class="star">*</span>
@@ -149,14 +154,13 @@
                 </span>
                 <span class="rating">Рейтинг: 8,5</span>
               </div>
-            </li>
             <li class="hotels__item">
-              <div class="hotels__item-photo">
+              <ul class="hotels__item-photo">
                 <img src="" alt="Desert Quail Inn">
+            </ul>
               </div>
               <div class="hotels__item-desc">
-                <a  class="hotels__item-name" href="#">Desert Quail Inn</a>
-                <div class="hotels__item-info">
+                <a class="hotels_item-name" href="#">Desert quail inn</a>
                   <div class="hotels__item-type">Мотель</div>
                   <div class="hotels__item-price">от 3000 p.</div>
                 </div>
@@ -164,7 +168,6 @@
                   <a class="hotels__more-info  btn" href="#">Подробнее</a>
                   <a class="hotels__item-book  btn  btn--action" href="#">Забронировать</a>
                 </div>
-              </div>
               <div class="hotels__item-rating">
                 <span class="hotels__item-stars" aria-label="3*">
                   <span class="star">*</span>
@@ -173,7 +176,6 @@
                 </span>
                 <span class="rating">Рейтинг: 8,9</span>
               </div>
-            </li>
             <li class="hotels__item">
               <div class="hotels__item-photo">
                 <img src="" alt="Villas at Poco Diablo">
@@ -184,11 +186,11 @@
                   <div class="hotels__item-type">Апартаменты</div>
                   <div class="hotels__item-price">от 2000 p.</div>
                 </div>
+              </div>
                 <div class="hotels__item-links">
                   <a class="hotels__more-info  btn" href="#">Подробнее</a>
                   <a class="hotels__item-book  btn  btn--action" href="#">Забронировать</a>
                 </div>
-              </div>
               <div class="hotels__item-rating">
                 <span class="hotels__item-stars" aria-label="2*">
                   <span class="star">*</span>
@@ -197,7 +199,6 @@
                 <span class="rating">Рейтинг: 9,2</span>
               </div>
             </li>
-          </ul>
         </section>
       </main>
       <footer class="page-footer  page-footer--inner">
