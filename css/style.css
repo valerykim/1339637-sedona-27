@@ -128,7 +128,7 @@ body {
     line-height: 1.15;
     margin: 0;
   }
-  
+
   button,
   input {
     overflow: visible;
@@ -283,7 +283,6 @@ body {
 
   .tel {
     font-weight: 800;
-
   }
 
   li {
@@ -1147,9 +1146,6 @@ body {
     margin-left: 350px;
   }
 
-
-  /*сеточные стили */
-
   .container {
     width: 1200px;
   }
@@ -1597,7 +1593,6 @@ body {
     display: flex;
     margin-top: -120px;
   }
-
 
   .main-footer__wrapper-catalog {
     height: 120px;
