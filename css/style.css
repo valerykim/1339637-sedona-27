@@ -727,7 +727,7 @@ body {
   .kids__button {
     width: 100%;
   }
-
+  
   .kids__label {
     width: 100%;
     padding-left: 20px;
@@ -737,6 +737,7 @@ body {
     width: 50%;
     text-align: left;
   }
+
   .older__button,
   .kids__button {
     white-space: nowrap;
