@@ -1,57 +1,37 @@
-var buttonOpen = document.querySelector(".travel__btn");
-		var ModalWindow = document.querySelector("form");
-		var In = ModalWindow.querySelector(".in__label-text");
-		var Older = ModalWindow.querySelector(".older__label-numbers");
-		var Kids = ModalWindow.querySelector(".kids__label-numbers");
-		var storage = localStorage.getItem("In");
-		
-		ModalWindow.classList.add("info__modal-hide");
-		
+var popup = document.querySelector(".form-wrap"); 
+   
+if (popup) {
+  popup.classList.toggle("form-show");
+}
 
-		var MapHide = document.querySelector(".travel__map");
-		MapHide.classList.add("travel__map-hide");
-		
-		function plusCount(obj) {
-			var currentAttr = obj.getAttribute('href'),
-				input = document.querySelector(currentAttr);
-			input.value++;
-		}
-		function minusCount(obj) {
-			var currentAttr = obj.getAttribute('href'),
-				input = document.querySelector(currentAttr);
+var button = document.querySelector(".offers-button");
 
-			if (input.value > 0) input.value--;
-		}
-	
+var checkin = popup.querySelector("[name=date-check-in]");
+var checkout = popup.querySelector("[name=date-check-out]");
+var adults = popup.querySelector("[name=adults]");
+var children = popup.querySelector("[name=children]");
+var form = popup.querySelector("form");
 
-		buttonOpen.addEventListener("click", function(evt) {
-			evt.preventDefault();
-			ModalWindow.classList.toggle("info__modal");
-			In.focus();
-			if (storage) {
-				In.value = storage;
-				Out.focus();
-			}
-			else {
-				In.focus();
-			}
-		});
+button.addEventListener("click", function (evt) {
+    
+    evt.preventDefault();
+    popup.classList.toggle("form-show");
+    popup.classList.remove("modal-error");
+});
 
-		ModalWindow.addEventListener("submit", function(evt) {
-			if ((!In.value) || (!Out.value)) {
-				evt.preventDefault();
-				ModalWindow.classList.remove("info__modal-error");
-				ModalWindow.offsetWidth = ModalWindow.offsetWidth;
-				ModalWindow.classList.add("info__modal-error");
-			}
-			else {
-				localStorage.setItem("In", In.value);
-			}
-		})
-		window.addEventListener("keydown", function (evt) {
-		    if (evt.keyCode === 27) {
-		      if (ModalWindow.classList.contains("info__modal")) {
-		        ModalWindow.classList.remove("info__modal");
-		      }
-		    }
-		});
+form.addEventListener("submit", function(evt) {
+  if (!checkin.value || !checkout.value || !adults.value || !children.value) {
+    evt.preventDefault();
+    form.classList.remove("form-error");
+    form.offsetWidth = form.offsetWidth;
+    form.classList.add("form-error");
+    if (!checkout.value) {
+      checkout.focus();
+      if (!checkin.value) { 
+        checkin.focus();
+}
+    } else if (!adults.value) { 
+      adults.focus();
+    } else children.focus();
+  }
+});
