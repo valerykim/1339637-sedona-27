@@ -1271,12 +1271,6 @@ body {
             animation-timing-function: linear;     
 }
   
-  @keyframes emergence {
-    0% {transform: scaleY(0) translateX(-50%);}
-  
-    100% {transform: scaleY(1) translateX(-50%);}
-  }
-  
   .offers-button {
     position: relative;
     z-index: 1;
@@ -1399,10 +1393,6 @@ body {
 
 label[for="children"] {
     padding-left: 53px;
-}
-  
-.hotel-search-form input[type="text"]::placeholder {
-    color: #000000;
 }
 
 .icon-calendar-button {
