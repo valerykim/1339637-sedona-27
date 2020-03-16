@@ -4,82 +4,76 @@
     <meta charset="UTF-8">
     <title>Главная</title> 
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet"> 
   </head>
   <body>
-	  <div class="wrapper">
-		<header class="header">
-			<div class="header__inner">
-				<nav class="header__nav nav">
-					<a class="nav__logo-link" href="catalog.html">
-					</a>
-					<ul class="nav__list">
-						<li class="nav__item nav__item-first">
-							<a class="nav__link nav__link--active elem" href="info.html">Информация</a>
-						</li>
-						<li class="nav__item nav__item-second">
-							<a class="nav__link elem" href="foto-video.html">Фото и видео</a>
-						</li>
-						<li class="nav__item nav__item-third">
-							<a class="nav__link elem" href="map.html">Карта штата</a>
-						</li>
-						<li class="nav__item nav__item-fourth">
-							<a class="nav__link elem" href="catalog.html">Гостиницы</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<main class="content">
-			<h1 class="visually-hidden">Sedona</h1>
-			<div class="header__background-logo logo">
-			</div>
-			<div class="header__wrapper">
-				<div class="wrapper__title">
-					<h1 class="title__slogan">Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
-					<p class="title__text">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+	<div class="page-wrapper">
+        <header class="page-header">
+            <nav class="navigation">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" width="140" height="71" alt="Логотип">
+                </a>
+                <ul class="navigation-list">
+                    <li class="navigation-item"><a href="#" aria-label="Информация">Информация</a></li>
+                    <li class="navigation-item"><a href="#" aria-label="Фото и видео">Фото и Видео</a></li>
+                    <li class="navigation-item"><a href="#" aria-label="Карта штата">Карта штата</a></li>
+                    <li class="navigation-item"><a href="catalog.html" aria-label="Гостиницы">Гостиницы</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="page-content">
+            <section class="promo">
+                <h1 class="visually-hidden">Седона</h1>
+                <div class="promo-picture">
+                    <img src="img/welcome.png" width="459" height="353" alt="Добро пожаловать">
+                </div>
+                <div class="promo-wrapper">
+                    <p class="promo-caption">
+                        Седона — небольшой городок в Аризоне, заслуживающий большего!
+                    </p>
+                    <p class="promo-reasons">
+                        Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+                    </p>
+                </div>
+            </section>
+
+			<section class="features-list">
+				<div class="feature-row-image">
+				  <div class="feature-item">
+					<h2>Настоящий<br>городок</h2>
+					<p>— №1 —</p>
+					<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+				  </div>
+				   <img src="img/realtown.jpg" width="800" height="256" alt="Город Седона">
 				</div>
-			</div>
-			<section class="content__nav info-nav">
-				<div class="info-nav__block">
-					<div class="info-nav__text">
-						<h2 class="info-nav__title">Настоящий городок</h2>
-						<p class="info-nav__hr">- №1 -</p>
-						<p class="info-nav__desc">Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
+			
+				<div class="feature-row-icons">
+				  <div class="feature-item">
+					<h2 class="feature-icon feature-icon-accomodation">Жильё</h2>
+					<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+				  </div>
+			
+				  <div class="feature-item">
+					<h2 class="feature-icon feature-icon-food">Еда</h2>
+					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+				  </div>
+			
+				  <div class="feature-item">
+					<h2 class="feature-icon feature-icon-souvenir">Сувениры</h2>
+					<p>Не только китайского, но и местного производства!</p>
+				  </div>
+				</div>
+
+				<div class="feature-row-image">
+					<img src="img/dewils_bridge.jpg" width="800" height="256" alt="Красные скалы Седоны">
+					<div class="feature-item">
+					  <h2>Там есть<br>Мост дьявола</h2>
+					  <p>— №2 —</p>
+					  <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 					</div>
-				</div>
-				<div class="info-nav__photo photo">
-				</div>
-			</section>
-			<section class="content__header info-header">
-				<div class="info-header__housing">
-					<div class="info-header__icon icon__housing">
-					</div>
-					<h3 class="info-header__title">Жилье</h3>
-					<p class="info-header__text">Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
-				</div>
-				<div class="info-header__food">
-					<div class="info-header__icon icon__food">
-					</div>
-					<h3 class="info-header__title">Еда</h3>
-					<p class="info-header__text">Всегда, заказывайте фирменный бургер, Вы&nbsp;не&nbsp;разочаруетесь!</p>
-				</div>
-				<div class="info-header__souvenir">
-					<div class="info-header__icon icon__souvenir">
-					</div>
-					<h3 class="info-header__title">Сувениры</h3>
-					<p class="info-header__text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
-				</div>
-			</section>
-			<section class="content__main info-main">
-				<div class="info-main__photo">
-				</div>
-				<div class="info-main__text">
-					<h2 class="info-main__title">Там есть Мост Дьявола</h2>
-					<p class="info-main__hr">— №2 —</p>
-					<p class="info-main__desc">Да, по&nbsp;нему можно пройтись! Если конечно<br>Вы осмелитесь</p>
-				</div>
+				  </div>
 			</section>
 			<section class="content__footer info-footer">
 				<div class="info-footer__S">
@@ -154,7 +148,7 @@
             <div class="footer-parth">
                 <div class="contacts"> 
                     <span>#VISITSEDONA</span>
-                    <a class="tel" href="tel:+74956660266" aria-label="Номер">Тел: +7(495) 666-02-66</a>
+                    <a class="tel" aria-label="Номер">Тел: +7(495) 666-02-66</a>
                 </div>
             </div>
 			<div class="footer-socials">
