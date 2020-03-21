@@ -1,160 +1,3 @@
-body {
-  margin: 0;
-}
-  
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block;
-}
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-figcaption,
-figure,
-main {
-  display: block;
-}
-
-figure {
-  margin: 1em 40px;
-}
-  
-hr {
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
- 
-pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-  
-a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
-  
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
-}
-  
-b,
-strong {
-  font-weight: inherit;
-}
-  
-b,
-strong {
-font-weight: bolder;
-}
- 
-  
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-dfn {
-  font-style: italic;
-}
-
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-  
-small {
-  font-size: 80%;
-}
-  
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-  
-sub {
-  bottom: -0.25em;
-}
-  
-sup {
-  top: -0.5em;
-}
-  
-  
-img {
-  border-style: none;
-}
-
-   
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-  
-  
-legend {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%; 
-  padding: 0; 
-  white-space: normal;
-}
-  
-progress {
-  display: inline-block;
-  vertical-align: baseline;
-}
-  
-textarea {
-  overflow: auto;
-}
-  
-[type="checkbox"],
-[type="radio"] {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0; 
-}
-
-details,
-menu {
-  display: block;
-}  
-  
-summary {
-  display: list-item;
-}
-  
-canvas {
-  display: inline-block;
-}
-    
-template {
-  display: none;
-}
-  
-[hidden] {
-  display: none;
-}
-
 @font-face {
   font-family: "PT Sans";
   font-weight: 400;
@@ -1368,28 +1211,29 @@ input[type="checkbox"] + label::before {
 
 .offers {
   flex-wrap: wrap;
-  min-height: 291px;
   position: relative;
-  padding-top: 50px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+
+  margin: 0;
+
+  line-height: 1.71;
+  color: #333;
 }
   
 .offers h2 {
-  margin-top: 0;
+  padding-top: 28px;
   margin-bottom: 23px;
 
   font-size: 30px;
   font-weight: bold;
   text-align: center;
   line-height: 1.2;
+  color: #000000;
 }
   
 .question {
   flex-wrap: wrap;
-  width: 568px;
-  margin: 0 auto;
-  margin-bottom: 60px;
+  margin: 0;
+  padding-bottom: 35px;
 
   text-align: center;
 }
@@ -1399,26 +1243,26 @@ input[type="checkbox"] + label::before {
   line-height: 1.71;
   color: #333333;
   text-align: center;
-  margin: 0;
-  margin-bottom: 49px;
+  margin: 0 auto;
+  margin-bottom: 16px;
 }
   
 .offers-button {
   display: block;
-  background-color: #766357;
-  color: #ffffff;
+
+  width: 568px;
+  margin: 0 auto;
+  padding: 30px 138px;
+
   font-size: 21px;
   font-weight: bold;
   line-height: 1.24;
-  text-transform: uppercase;
-  font-family: "PT Sans", Arial, sans-serif;
-  min-height: 86px;
-  margin: 0 auto;
-  border: none;
-  width: 568px;
   text-align: center;
-  padding-top: 30px 138px;
-  z-index: 2;
+  text-transform: uppercase;
+
+  color: #fff;
+  border: none;
+  background-color: #766357;
 }
   
 .offers-button:hover,
@@ -1441,27 +1285,27 @@ input[type="checkbox"] + label::before {
   margin: 0 auto;
   padding: 55px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-weight: bold; 
   text-align: center; 
-  color: #000000;
-  background-color: #ffffff;  
+  background-color: #ffffff;   
+  color: #000000; 
   -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);    
-  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-  -webkit-animation: slide-down;
-  animation: slide-down;    
+          box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+          -webkit-animation: slide-down;
+          animation: slide-down;    
   -webkit-animation-duration: 0.7s;    
-  animation-duration: 0.7s; 
+          animation-duration: 0.7s; 
   -webkit-animation-timing-function: linear; 
-  animation-timing-function: linear;     
+          animation-timing-function: linear;
 }
   
 @keyframes emergence {
@@ -1491,7 +1335,7 @@ input[type="checkbox"] + label::before {
   width: 1200px;
   height: 593px;
   min-height: 593px;
-  margin-bottom: -122px;
+  margin-bottom: -123px;
   
   background-color: #f2f2f2;
 }
@@ -1524,15 +1368,11 @@ input[type="checkbox"] + label::before {
 .form-line {
   position: relative;
   width: 100%;
-  height: 38px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 41px;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   margin: 0;
-  align-items: flex-start;
+  align-items: center;
 }
   
 .form-line input[type="text"] {
@@ -1543,7 +1383,7 @@ input[type="checkbox"] + label::before {
   padding: 0;
   padding-top: 6px;
   padding-bottom: 5px;
-  padding-left: 14px;
+  padding-left: 12px;
   padding-right: 45px;
       
   font-weight: bold;
@@ -1559,14 +1399,13 @@ input[type="checkbox"] + label::before {
 }
   
 .form-line-amount {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   width: 50%;
-  height: 38px;
+  height: 37px;
 }
   
 .form-line-amount input[type="text"] {
@@ -1602,7 +1441,7 @@ input[type="checkbox"] + label::before {
 }
   
 label[for="children"] {
-  padding-left: 53px;
+  padding-left: 50px;
 }
     
 .hotel-search-form input[type="text"]::placeholder {
@@ -1687,17 +1526,17 @@ label[for="children"] {
 }
   
 .hotel-search-button-blue {
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  padding: 17px 20px;
-  width: 458px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 21px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
-  color: #ffffff;
-  background-color: #81b3d2;
+-ms-flex-item-align: end;
+align-self: flex-end;
+padding: 17px 20px;
+width: 458px;
+font-family: "PT Sans", "Arial", sans-serif;
+font-size: 21px;
+font-weight: bold;
+text-transform: uppercase;
+border: none;
+color: #ffffff;
+background-color: #81b3d2;
 }
   
 .hotel-search-button-blue:hover {
